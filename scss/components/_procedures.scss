@@ -1,0 +1,58 @@
+.procedures {
+	&__sec-title {
+		color: $h-color;
+		font-size: 32px;
+		margin-bottom: 32px;
+	}
+
+	&__desc {
+		color: $p-color;
+		margin-bottom: 0;
+	}
+
+	&__post {
+		border: 1px solid $border-color;
+		margin: 70px 0 30px;
+		padding: 20px;
+		text-align: center;
+
+		&:hover {
+			box-shadow: 0 5px 20px $box-shadow-color;
+		}
+
+		> img {
+			margin-bottom: 35px;
+			width: 100%;
+		}
+
+		&__heading {
+			a {
+				color: $link-color;
+				font-size: 22px;
+			}
+		}
+
+		&__desc {
+			color: $p-color;
+			margin-bottom: 40px;
+		}
+
+		&__btn {
+			@include button($btn-color, 0, 50px, 15px 30px, none, uppercase);
+
+			&:hover {
+				background-color: $procedures-btn-hover-color;
+				color: $bg-color;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.procedures {
+		&__sec-title {
+			font-size: 42px;
+			margin-bottom: 32px;
+		}
+	}
+}
