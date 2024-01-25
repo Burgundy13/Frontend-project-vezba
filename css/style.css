@@ -141,3 +141,46 @@ section {
     .about__read-more__btn:hover {
       background-color: #fff;
       border-color: #ff817e; }
+
+.service {
+  margin-bottom: 40px; }
+  .service__single-service {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; }
+    .service__single-service > img {
+      width: 100%; }
+    .service__single-service--hover {
+      align-items: center;
+      background-color: rgba(255, 129, 126, 0.9);
+      bottom: -100%;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      position: absolute;
+      transition: 0.5s;
+      width: 100%; }
+      .service__single-service--hover span {
+        color: #fff;
+        font-family: 'Rufina';
+        font-weight: 700;
+        margin-top: 3%; }
+  .service__one:hover .service__single-service--hover {
+    bottom: 0; }
+  .service__two, .service__three, .service__four {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  .service__two,
+  .service__three {
+    display: block; }
+    .service__two:hover .service__single-service--hover,
+    .service__three:hover .service__single-service--hover {
+      bottom: 0; } }
+
+@media screen and (min-width: 992px) {
+  .service__four {
+    display: block; }
+    .service__four:hover .service__single-service--hover {
+      bottom: 0; } }
